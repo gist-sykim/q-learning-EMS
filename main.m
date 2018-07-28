@@ -44,9 +44,9 @@ profit_hourly_QL = zeros(1, numOfStep);
 
 %% Data input (bldg demand, v2g demand, pv demand, utility price, v2g price)
 for episode = 1:numOfEpisode
-%    demand_bldg(step) = 0; % input your own building demand data set (per 5 min) of 1 day
-%    demand_v2g(step) = 0; % input your own v2g demand data set (per 5 min) of 1 day
-%    supply_pv(step) = 0; % input your own PV generation data set (per 5 min) of 1 day
+%    demand_bldg(step) = 0; % input your own building demand data set (per 5 min) of each day
+%    demand_v2g(step) = 0; % input your own v2g demand data set (per 5 min) of each day
+%    supply_pv(step) = 0; % input your own PV generation data set (per 5 min) of each day
    for step = 1:numOfStep % for utility price and v2g price 
         if ((timeZoneBorder2<=step) && (step<timeZoneBorder3)) || ((timeZoneBorder4<=step) && (step<timeZoneBorder5))  % peak zone
             price_v2g(step) = priceV2GHigh;
