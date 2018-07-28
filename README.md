@@ -8,4 +8,4 @@ In 'main.m', data sets of builidng demand, PV generation, and V2G demand should 
 
 # Update
 Source codes will be continuously updated.
-For more information, please contact (mailto:sunyongkim@gist.ac.kr) 
+For more information, please contact  [sunyongkim@gist.ac.kr](mailto:sunyongkim@gist.ac.kr) 
