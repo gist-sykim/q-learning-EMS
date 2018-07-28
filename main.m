@@ -42,7 +42,7 @@ initEpsilon = 1.0;
 profit_daily_QL = zeros(1, numOfEpisode);
 profit_hourly_QL = zeros(1, numOfStep);
 
-%% Data input (bldg demand, v2g demand, pv demand, utility price, v2g price)
+% Data input (bldg demand, v2g demand, pv demand, utility price, v2g price)
 for episode = 1:numOfEpisode
 %    demand_bldg(step) = 0; % input your own building demand data set (per 5 min) of each day
 %    demand_v2g(step) = 0; % input your own v2g demand data set (per 5 min) of each day
@@ -64,7 +64,7 @@ for episode = 1:numOfEpisode
     end
 end     
        
-%% loop for Q-learning algorithm
+% loop for Q-learning algorithm
 if episode == 1 % for Q-table initialization step in the proposed algorithm
     for initIteration = 1:1:1
         [profit_hourly_QL, Q, SoCOfESS_QL] = qlearning( numOfSoCOfESS, price_util, priceHigh, priceMid, priceLow, numOfStep, energyUnit, price_v2g, priceV2GHigh, priceV2GMid, priceV2GLow, profit_hourly_QL,...
@@ -78,6 +78,6 @@ end
 demand_bldg, demand_v2g, supply_pv, episode, timeZoneBorder1, timeZoneBorder2,...
 timeZoneBorder3, timeZoneBorder4, timeZoneBorder5, timeZoneBorder6, SoCOfESS_QL, possibleAction, CHARGING, NORMAL, DISCHARGING, SELLING, Q, alpha, gamma, maxSoCOfESS, e );
 
-%% results of daily profit 
+% results of daily profit 
 profit_daily_QL(episode) = sum(profit_hourly_QL);
 
