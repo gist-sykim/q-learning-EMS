@@ -1,6 +1,6 @@
 # Q-learning-based EMS algorithm
-This is the source code of the MATLAB simulations.  
-The algorithm reduces the building energy costs by applying Q-learning.
+This is the source code for MATLAB simulations.  
+The algorithm aims at reducing the building energy costs by applying Q-learning.
 
 ## File list
 README.md - This file  
