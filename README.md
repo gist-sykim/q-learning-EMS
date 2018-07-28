@@ -7,6 +7,6 @@ qlearnig.m - MATLAB function for Q-learning algorithm
 In 'main.m', data sets of builidng demand, PV generation, and V2G demand should be input.  
 (See lines 47-49) 
 
-# Update
+# Version update
 Source codes will be continuously updated.  
 For more information, please contact  [sunyongkim@gist.ac.kr](mailto:sunyongkim@gist.ac.kr) 
