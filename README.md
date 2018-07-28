@@ -1,6 +1,6 @@
 # File list
-README - This file
-main.m - Main code for EMS
+README - This file \\
+main.m - Main code for EMS \\
 qlearnig.m - MATLAB function for Q-learning algorithm
 
 # Data required
